@@ -32,7 +32,7 @@ Best User Bot To Manage Your Telegram Account
 
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/starkGang/LuciferUserbot
+git clone https://github.com/silverhalobit/LuciferUserbot
 cd LuciferUserbot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
