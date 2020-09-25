@@ -1,6 +1,7 @@
 """
 created by @mrconfused and @sandy1709
 Idea by @BlazingRobonix
+Ported to DARK COBRA by @hellboi_atul
 
 """
 #    Copyright (C) 2020  sandeep.n(π.$)
