@@ -18,8 +18,7 @@ pm_caption += "ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ        : [ᴊᴏɪɴ](https://
 pm_caption += "ʟɪᴄᴇɴꜱᴇ                 : [ᴍɪᴛ ʟɪᴄᴇɴꜱᴇ](https://github.com/silverhalobit/luciferuserbot/blob/master/LICENSE)\n"
 
 pm_caption += "ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ            : [SilVerHalobit](https://github.com/silverhalobit)\n"
-
-pm_caption += "┏┓━┏┓━━━━┏┓━┏┓\n┃┃━┃┃━━━━┃┃━┃┃\n┃┗━┛┃┏━━┓┃┃━┃┃\n┃┏━┓┃┃┏┓┃┃┃━┃┃\n┃┃━┃┃┃┃━┫┃┗┓┃┗┓\n┗┛━┗┛┗━━┛┗━┛┗━┛"
+pm_caption += " [┏┓━┏┓━━━━┏┓━┏┓━━━━━\n ┃┃━┃┃━━━━┃┃━┃┃━━━━━\n ┃┗━┛┃┏━━┓┃┃━┃┃━┏━━┓\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━┃┏┓┃ \n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓┃┗┛┃ \n ┗┛━┗┛┗━━┛┗━┛┗━┛┗━━┛](https://t.me/LUCIFER_USERBOT)"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
