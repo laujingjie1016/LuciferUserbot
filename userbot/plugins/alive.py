@@ -19,7 +19,7 @@ pm_caption += "ʟɪᴄᴇɴꜱᴇ                 : [ᴍɪᴛ ʟɪᴄᴇɴꜱᴇ
 
 pm_caption += "ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ            : [SilVerHalobit](https://github.com/silverhalobit)\n"
 
-pm_caption += "┏┓━┏┓━━━━┏┓━┏┓\n┃┃━┃┃━━━━┃┃━┃┃\n┃┗━┛┃┏━━┓┃┃━┃┃\n┃┏━┓┃┃┏┓┃┃┃━┃┃\n┃┃━┃┃┃┃━┫┃┗┓┃┗┓\n┗┛━┗┛┗━━┛┗━┛┗━┛""
+pm_caption += "┏┓━┏┓━━━━┏┓━┏┓\n┃┃━┃┃━━━━┃┃━┃┃\n┃┗━┛┃┏━━┓┃┃━┃┃\n┃┏━┓┃┃┏┓┃┃┃━┃┃\n┃┃━┃┃┃┃━┫┃┗┓┃┗┓\n┗┛━┗┛┗━━┛┗━┛┗━┛"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
