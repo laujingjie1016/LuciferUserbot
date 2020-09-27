@@ -56,7 +56,7 @@ async def amireallyalive(alive):
         await borg.send_file(alive.chat_id, ALIVE_PIC,caption=pm_caption, link_preview = False)
         await allive.delete()
         return
-    req = requests.get("https://telegra.ph/file/6d067b1a626a25735f5ed.png")
+    req = requests.get("https://telegra.ph/file/d7cbffcb6bae55874b1c2.jpg")
     req.raise_for_status()
     file = BytesIO(req.content)
     file.seek(0)
@@ -66,13 +66,12 @@ async def amireallyalive(alive):
         sticker.name = "sticker.webp"
         sticker.seek(0)
         await borg.send_file(alive.chat_id, file=sticker)
-        await borg.send_message(alive.chat_id,"**𝙳𝙰𝚁𝙺 𝙲𝙾𝙱𝚁𝙰 𝙸𝚂 🅾︎🅽🅻🅸🅽🅴**\n"
+        await borg.send_message(alive.chat_id,"**LUCIFER 𝙸𝚂 🅾︎🅽🅻🅸🅽🅴**\n"
                       f"**𝕄𝕪 𝔹𝕠𝕤𝕤**            : {DEFAULTUSER}\n"
                       "𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽        : 15.0\n"
                       "𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽          : 3.8.5\n"
-                      "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝙽𝙽𝙴𝙻         : [ᴊᴏɪɴ](https://t.me/dark_cobra_support)\n"
-                      "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿           : [ᴊᴏɪɴ](https://t.me/dark_cobra_support_group)\n"
-                      "𝘓𝘐𝘚𝘌𝘕𝘊𝘌                  : [AGPL-3.0  ʟɪᴄᴇɴꜱᴇ](https://jenaatul8.wixsite.com/hellboi-atul)\n"
-                      "𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔            : [ @hellboi_atul ](https://t.me/hellboi_atul)\n"
+                      "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝙽𝙽𝙴𝙻         : [ᴊᴏɪɴ](https://t.me/lucifer_userbot)\n"
+                      "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿           : [ᴊᴏɪɴ](https://t.me/lucifer_userbot)\n"
+                      "𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔           : [ @broken_identitiess ](https://t.me/broken_identitiess)\n"
                                 "┏┓━┏┓━━━━┏┓━┏┓\n ┃┃━┃┃━━━━┃┃━┃┃\n ┃┗━┛┃┏━━┓┃┃━┃┃\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━ \n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓ \n ┗┛━┗┛┗━━┛┗━┛┗━┛" , link_preview = False) 
         await alive.delete()
