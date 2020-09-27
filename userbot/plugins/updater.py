@@ -12,7 +12,7 @@ from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 from userbot import CMD_HELP, bot
 from userbot.utils import admin_cmd
 
-UPSTREAM_REPO_URL = "https://github.com/DARK-COBRA/DARKCOBRA.git"
+UPSTREAM_REPO_URL = "https://github.com/silverhalobit/LuciferUserbot.git"
 HEROKU_API_KEY = Var.HEROKU_API_KEY
 HEROKU_APP_NAME = Var.HEROKU_APP_NAME
 
@@ -42,7 +42,7 @@ async def update_requirements():
 async def upstream(ups):
     "For .update command, check if the bot is up to date, update if specified"
     conf = ups.pattern_match.group(1)
-    await ups.edit("Checking for updates, please wait....")
+    await ups.edit("Checking for New Updates, please wait my master....")
     off_repo = UPSTREAM_REPO_URL
     force_update = False
     try:
@@ -59,8 +59,8 @@ async def upstream(ups):
         return
     except InvalidGitRepositoryError as error:
         if conf != "now":
-            await ups.edit(f"Hey, did you type update🤔.....Okie..My dear sweet master..🤗\
-            \nPlease do type |.update now| to update your DARK-COBRA😎.")
+            await ups.edit(f"Hey, did you type update🤔.....Okay..My sweet master..🤗\
+            \nPlease do type |.update now| to update your Lucifer.")
             return
         repo = Repo.init()
         origin = repo.create_remote('upstream', off_repo)
@@ -110,14 +110,14 @@ async def upstream(ups):
     if force_update:
         await ups.edit('Force-Syncing to latest stable userbot code, please wait master...😅😅')
     else:
-        await ups.edit('Updating userbot, please wait....you arey best boss🤗😇')
+        await ups.edit('Updating userbot, please wait....you are the best boss🤗😇')
     if HEROKU_API_KEY is not None:
         import heroku3
         heroku = heroku3.from_key(HEROKU_API_KEY)
         heroku_app = None
         heroku_applications = heroku.apps()
         if not HEROKU_APP_NAME:
-            await ups.edit('CAT Please set up the `HEROKU_APP_NAME` variable to be able to update userbot.')
+            await ups.edit('Please set up the `HEROKU_APP_NAME` variable to be able to update userbot.')
             repo.__del__()
             return
         for app in heroku_applications:
@@ -139,7 +139,7 @@ async def upstream(ups):
             remote.set_url(heroku_git_url)
         else:
             remote = repo.create_remote("heroku", heroku_git_url)
-        await ups.edit("Updating and Deploying New Update. Please wait for 5 minutes then use `.alive` to check if i'm working or not, you are my best boss...🤗🤗😎.. Just after this update a restart will take place..that's all- your DARK COBRA by @hellboi_atul ")
+        await ups.edit("Updating and Deploying New Update. Please wait for 5 minutes then use `.alive` to check if i'm working or not, you are my best boss...🤗🤗😎.. Just after this update a restart will take place..that's all- your LUCIFER ")
         remote.push(refspec="HEAD:refs/heads/master", force=True)
     else:
         try:
