@@ -18,7 +18,7 @@ pm_caption += "ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ        : [ᴊᴏɪɴ](https://
 pm_caption += "ʟɪᴄᴇɴꜱᴇ                 : [ᴍɪᴛ ʟɪᴄᴇɴꜱᴇ](https://github.com/silverhalobit/luciferuserbot/blob/master/LICENSE)\n"
 
 pm_caption += "ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ            : [SilVerHalobit](https://github.com/silverhalobit)\n"
-pm_caption += " [┏┓━┏┓━━━━┏┓━┏┓━━━━━\n ┃┃━┃┃━━━━┃┃━┃┃━━━━━\n ┃┗━┛┃┏━━┓┃┃━┃┃━┏━━┓\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━┃┏┓┃ \n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓┃┗┛┃ \n ┗┛━┗┛┗━━┛┗━┛┗━┛┗━━┛](https://t.me/LUCIFER_USERBOT)"
+pm_caption += " [┏┓━┏┓━━━━┏┓━┏┓\n ┃┃━┃┃━━━━┃┃━┃┃\n ┃┗━┛┃┏━━┓┃┃━┃┃\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━\n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓\n ┗┛━┗┛┗━━┛┗━┛┗━┛](https://t.me/LUCIFER_USERBOT)"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
@@ -26,4 +26,4 @@ async def amireallyalive(alive):
     await alive.delete()
     """ For .alive command, check if the bot is alive.  """
     await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
-    await alive.delete() 
+    await alive.delet
