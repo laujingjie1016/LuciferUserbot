@@ -32,5 +32,5 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("`wo zaru degi ekbar mang ker to dekho`")
+    await event.edit("`wo zarur degi ekbar mang ker to dekho`")
     await asyncio.sleep(999)
