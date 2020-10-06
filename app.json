@@ -66,6 +66,11 @@
       "value": "",
       "required": false
     },
+    "OCR_SPACE_API_KEY" {
+      "description": "Required for OCR functionality. Get from https://www.ocr.space/ . It will still work if you don't set the var as we have given a default OCR API KEY. BUt it is recommended to use your own.",
+      "vale": "",
+      "required": false
+    },
     "LYDIA_API_KEY": {
       "description": "Needed for Lydia AI. Follow https://telegra.ph/Lydia-09-05 to get your API.",
       "value": "",
