@@ -11,7 +11,7 @@ OCR_API_KEY = Config.OCR_SPACE_API_KEY
 if OCR_API_KEY is None:
    OCR_API_KEY = "f561419c5488957"
 
-def ocr_space_file(filename, overlay=False, OCR_API_KEY, language='eng'):
+def ocr_space_file(filename, overlay=False, api_key=OCR_API_KEY, language='eng'):
     """ OCR.space API request with local file.
         Python3.5 - not tested on 2.7
     :param filename: Your file path & name.
@@ -37,7 +37,7 @@ def ocr_space_file(filename, overlay=False, OCR_API_KEY, language='eng'):
     return r.json()
 
 
-def ocr_space_url(url, overlay=False, OCR_API_KEY, language='eng'):
+def ocr_space_url(url, overlay=False, api_key=OCR_API_KEY, language='eng'):
     """ OCR.space API request with remote file.
         Python3.5 - not tested on 2.7
     :param url: Image url.
