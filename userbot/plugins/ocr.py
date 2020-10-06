@@ -37,7 +37,7 @@ def ocr_space_file(filename, overlay=False, OCR_API_KEY, language='eng'):
     return r.json()
 
 
-def ocr_space_url(url, overlay=False, api_key=Config.OCR_SPACE_API_KEY, language='eng'):
+def ocr_space_url(url, overlay=False, OCR_API_KEY, language='eng'):
     """ OCR.space API request with remote file.
         Python3.5 - not tested on 2.7
     :param url: Image url.
