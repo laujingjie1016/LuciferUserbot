@@ -37,7 +37,7 @@ async def update_requirements():
 async def upstream(ups):
     "For .update command, check if the bot is up to date, update if specified"
     conf = ups.pattern_match.group(1)
-    await ups.edit("Checking for New Updates, please wait my master....")
+    await ups.edit("Checking for New 🔄Updates🔄, please🙏🏻 wait my master😎....")
     off_repo = UPSTREAM_REPO_URL
     force_update = False
     try:
