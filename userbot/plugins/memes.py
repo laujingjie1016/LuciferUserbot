@@ -1,10 +1,3 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.b (the "License");
-# you may not use this file except in compliance with the License.
-#
-#
-
 """ Userbot module for having some fun with people. """
 
 import asyncio
@@ -850,7 +843,7 @@ async def vapor(vpr):
 @register(outgoing=True, pattern="^.repo$")
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("Click [here](https://github.com/DARK-COBRA/DARKCOBRA) to open this cool userbot repo 𝔻𝔸ℝ𝕂 ℂ𝕆𝔹ℝ𝔸.")
+        await e.edit("Click [Devil](https://github.com/silverhalobit/LuciferUserbot) to open this Devil's repo.")
 			  
 			  
 @register(outgoing=True, pattern="^.str(?: |$)(.*)")
