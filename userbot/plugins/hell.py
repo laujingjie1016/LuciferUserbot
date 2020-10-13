@@ -15,14 +15,14 @@ async def _(event):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(
-        f"**Lucifer**\n😈{ms}👿\nMy Peru Master:-{DEFAULTUSER}]"
+        f"**★ Lucifer**\n★ 😈{ms}👿\n★ My Peru Master:-{DEFAULTUSER}"
     )
 
 
 CMD_HELP.update(
     {
-        "ping": "__**PLUGIN NAME :** Ping__\
-    \n\n📌** CMD ★** `.ping`\
+        "hell": "__**PLUGIN NAME :** hell__\
+    \n\n📌** CMD ★** `.hell`\
     \n**USAGE   ★  **Shows you the ping speed of server"
     }
 )
