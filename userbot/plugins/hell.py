@@ -6,7 +6,7 @@ from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Devil's Son"
 
-@borg.on(admin_cmd(pattern="ping$"))
+@borg.on(admin_cmd(pattern="hell$"))
 async def _(event):
     if event.fwd_from:
         return
